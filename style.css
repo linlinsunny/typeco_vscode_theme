@@ -1,0 +1,113 @@
+/*
+ * @package     Vscode Theme
+ * @author      Your Name
+ * @version     1.0.0
+ * @link        https://github.com/your-username/your-repo-name
+ * @description A Typecho theme that mimics the VS Code interface.
+ */
+
+/* --- Basic Layout --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Helvetica Neue", sans-serif;
+    margin: 0;
+    background-color: #1e1e1e; /* VS Code Dark+ 背景色 */
+    color: #d4d4d4; /* 默认文字颜色 */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.vscode-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* --- Activity Bar (最左侧活动栏) --- */
+.activity-bar {
+    width: 50px;
+    background-color: #333333;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.activity-bar a {
+    color: #cccccc;
+    font-size: 24px; /* 图标大小 */
+    margin: 15px 0;
+    text-decoration: none;
+}
+.activity-bar a:hover {
+    color: #ffffff;
+}
+
+
+/* --- Side Bar (文件浏览器) --- */
+.side-bar {
+    width: 280px;
+    background-color: #252526;
+    padding: 10px;
+    overflow-y: auto;
+}
+.side-bar .widget {
+    margin-bottom: 20px;
+}
+.side-bar .widget-title {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #cccccc;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.side-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.side-bar li a {
+    color: #cccccc;
+    text-decoration: none;
+    display: block;
+    padding: 4px 10px;
+    border-radius: 3px;
+}
+.side-bar li a:hover {
+    background-color: #37373d;
+}
+
+
+/* --- Main Content (主内容区) --- */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #1e1e1e;
+}
+.post-title a {
+    color: #569cd6;
+    text-decoration: none;
+}
+.post-content {
+    line-height: 1.7;
+}
+.post-content pre code {
+    /* 代码高亮样式，推荐使用 highlight.js */
+    padding: 1em;
+    border-radius: 5px;
+}
+
+
+/* --- Status Bar (底部状态栏) --- */
+.status-bar {
+    height: 25px;
+    background-color: #007acc;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-size: 12px;
+}
